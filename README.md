@@ -13,15 +13,19 @@ Activate the environment and follow the instructions to install
 conda activate bencheval
 ```
 
-Download NASbench201 data (see https://github.com/D-X-Y/NAS-Bench-201) and place it under the datasets folder
+Download:
+- NASbench101 data (see https://github.com/google-research/nasbench)
+- NASbench201 data (see https://github.com/D-X-Y/NAS-Bench-201) 
+- TransNAS-Bench-101 (see https://github.com/yawen-d/TransNASBench)
+and place them under the datasets folder
 
 
 To process the benchmark search space and generate pickle files with information about all architectures:
 ```
-python diversity.py
+python diversity*.py
 ```
 
-With the pickle files, the file plots_diversity.py allows creating all the plots and tables shown in the paper.
+With the pickle files, the file plots_diversity*.py allows creating all the plots and tables shown in the paper.
 
 
 The code is licensed under the MIT licence.
